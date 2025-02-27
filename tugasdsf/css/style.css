@@ -1,0 +1,890 @@
+:root {
+    --gold: #E6C744;
+    --gray: #C2C8DA;
+    --white: #FFFF;
+    --black: #0000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/*NAVBAR BARU*/
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #E6C744;
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    align-items: center;
+}
+
+.top-bar a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dropdowns {
+    display: flex;
+    gap: 15px;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 8px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #E6C744;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #C2C8DA; /* Warna soft */
+    padding: 8px 15px;
+    border-radius: 25px;
+    width: 280px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Efek shadow soft */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* Tombol Search */
+.search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.search-bar button i {
+    color: #000;
+    font-size: 18px;
+}
+
+/* Hover Effect */
+.search-bar button:hover {
+    transform: scale(1.1);
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    color: #E6C744; /* Warna emas saat hover */
+}
+
+
+
+/*header {
+    height: 80px;
+    padding: 14px 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+header .menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}*/
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: var(--gold);
+}
+.hero img{
+    width: 500px;
+}
+
+.hero-text {
+    max-width: 40%;   
+    font-size: 30px;
+}
+
+
+
+.hero button {
+    background: var(--gray);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.categories {
+    text-align: center;
+    padding: 50px;
+}
+ 
+
+.best-deals {
+    text-align: center;
+    padding: 50px;
+}
+
+.category {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    background: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+.category p {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 200px;
+    height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #E6C744;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #E6C744;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product button:hover {
+    background: #C2C8DA;
+}
+
+.rating {
+    font-size: 24px;
+    color: #E6C744; /* Warna emas untuk bintang */
+    text-align: left;
+}
+
+
+.footer {
+    background: var(--gray); 
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Pastikan semua item mulai dari atas */
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-about {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B5E3B;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.footer-social a {
+    color: #8B5E3B;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #6D452F;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-links h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Susun ke bawah */
+    gap: 5px; /* Beri jarak antar item */
+}
+
+
+.footer-links ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover,
+.highlight {
+    color: #C16860;
+    font-weight: bold;
+}
+
+
+/* css brand*/
+
+.brand-container {
+    width: 90%;
+    max-width: 1200px; /* Tambahin supaya lebih luas */
+    text-align: center;
+    margin: auto;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Paksa jadi 3 kolom */
+    gap: 20px;
+    justify-content: center; /* Tengahin isi */
+    align-items: center;
+    justify-items: center; /* Ini yang penting */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.brand-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid transparent;
+    width: 80%; /* Biar semua card sama */
+}
+
+.brand-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.brand-info {
+    text-align: left;
+}
+
+.brand-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.brand-info p {
+    margin: 2px 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.brand-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card.active {
+    border: 2px solid #E6C744; /* Warna gold sesuai palette */
+    background: #fef8e5;
+}
+
+.furniture-banner {
+    display: flex;
+    align-items: center;
+    background: #F5EAD7; /* Warna cream */
+    border-radius: 15px;
+    padding: 30px;
+    gap: 20px;
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar dan diskon */
+.furniture-image {
+    position: relative;
+    flex: 1;
+}
+
+.furniture-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.discount {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #C16860;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Text area */
+.furniture-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.furniture-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D9534F;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 8px;
+}
+
+/* Tombol */
+.furniture-text button {
+    background: #E6C744;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.furniture-text button:hover {
+    background: #D5B33E;
+    transform: scale(1.05);
+}
+
+
+
+/* Container Utama */
+/* Global Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Trending Products */
+.trending-products, .best-selling, .services {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Trending Products Layout */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-info button {
+    background: var(--gold);
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.product-info button:hover {
+    background: #16331A;
+}
+
+/* Best Selling Store */
+.store-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.store-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.store-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.store-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Services Section */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: var(--gray);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Styles for Android & iPhone */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero img {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .hero-text {
+        max-width: 90%;
+        font-size: 24px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .product-list,
+    .category-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product,
+    .category {
+        width: 45%;
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promo-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .promo-text {
+        max-width: 100%;
+    }
+
+    .promo-banner img {
+        height: auto;
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+
+    .product,
+    .category {
+        width: 100%;
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .promo-banner img {
+        width: 70%;
+        max-width: 200px;
+    }
+    
+}
+
+/* hal akhir*/
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.services {
+    width: 50%;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.free-shipping {
+    background-color: #D19C97;
+}
+
+.cod {
+    background-color: #C5B783;
+}
+
+.returns {
+    background-color: #E19C9C;
+}
+
+.support {
+    background-color: #B5C593;
+}
+
+.newsletter {
+    width: 40%;
+    padding: 20px;
+    background: url('https://source.unsplash.com/300x200/?shopping,store') center/cover;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    background-color: #E6C744;
+    color: black;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #d4b437;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services, .newsletter {
+        width: 100%;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+}
+
